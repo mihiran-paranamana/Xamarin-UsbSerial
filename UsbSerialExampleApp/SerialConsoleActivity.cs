@@ -57,6 +57,7 @@ namespace UsbSerialExampleApp
         TextView titleTextView;
         TextView dumpTextView;
         ScrollView scrollView;
+        EditText sendData;
         Button sleepButton;
         Button wakeButton;
 
@@ -75,23 +76,26 @@ namespace UsbSerialExampleApp
             dumpTextView = FindViewById<TextView>(Resource.Id.consoleText);
             scrollView = FindViewById<ScrollView>(Resource.Id.demoScroller);
 
+            sendData = FindViewById<EditText>(Resource.Id.sendData);
             sleepButton = FindViewById<Button>(Resource.Id.sleepButton);
             wakeButton = FindViewById<Button>(Resource.Id.wakeupButton);
 
             // The following arrays contain data that is used for a custom firmware for
             // the Elatec TWN4 RFID reader. This code is included here to show how to
             // send data back to a USB serial device
-            byte[] sleepdata = new byte[] { 0xf0, 0x04, 0x10, 0xf1 };
-            byte[] wakedata = new byte[] { 0xf0, 0x04, 0x11, 0xf1 };
+            //byte[] sleepdata = new byte[] { 0x57, 0x65, 0x6c, 0x63, 0x6f, 0x6d, 0x65, 0x0a };
+            //byte[] wakedata = new byte[] { 0x4f, 0x6b, 0x0a };
 
             sleepButton.Click += delegate
             {
+                byte[] sleepdata = Encoding.ASCII.GetBytes(sendData.Text.ToString());
                 WriteData(sleepdata);
+                sendData.Text = "";
             };
 
             wakeButton.Click += delegate
             {
-                WriteData(wakedata);
+                //WriteData(wakedata);
             };
         }
 
@@ -145,7 +149,7 @@ namespace UsbSerialExampleApp
 
             serialIoManager = new SerialInputOutputManager(port)
             {
-                BaudRate = 115200,
+                BaudRate = 9600,
                 DataBits = 8,
                 StopBits = StopBits.One,
                 Parity = Parity.None,

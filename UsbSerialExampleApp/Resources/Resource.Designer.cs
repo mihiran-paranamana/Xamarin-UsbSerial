@@ -62,11 +62,11 @@ namespace UsbSerialExampleApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060008
-			public const int consoleText = 2131099656;
+			// aapt resource value: 0x7f06000b
+			public const int consoleText = 2131099659;
 			
-			// aapt resource value: 0x7f060007
-			public const int demoScroller = 2131099655;
+			// aapt resource value: 0x7f06000a
+			public const int demoScroller = 2131099658;
 			
 			// aapt resource value: 0x7f060001
 			public const int demoTitle = 2131099649;
@@ -80,14 +80,23 @@ namespace UsbSerialExampleApp
 			// aapt resource value: 0x7f060000
 			public const int progressBarTitle = 2131099648;
 			
+			// aapt resource value: 0x7f060006
+			public const int sendData = 2131099654;
+			
 			// aapt resource value: 0x7f060003
 			public const int separator = 2131099651;
 			
 			// aapt resource value: 0x7f060005
-			public const int sleepButton = 2131099653;
+			public const int separator1 = 2131099653;
 			
-			// aapt resource value: 0x7f060006
-			public const int wakeupButton = 2131099654;
+			// aapt resource value: 0x7f060009
+			public const int separator2 = 2131099657;
+			
+			// aapt resource value: 0x7f060007
+			public const int sleepButton = 2131099655;
+			
+			// aapt resource value: 0x7f060008
+			public const int wakeupButton = 2131099656;
 			
 			static Id()
 			{
