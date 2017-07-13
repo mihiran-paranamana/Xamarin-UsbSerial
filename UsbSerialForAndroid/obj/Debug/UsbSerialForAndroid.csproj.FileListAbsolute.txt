@@ -10,3 +10,15 @@ C:\Users\Student\mihiran\UsbSerialForAndroid\UsbSerialForAndroid\obj\Debug\res\v
 C:\Users\Student\mihiran\UsbSerialForAndroid\UsbSerialForAndroid\obj\Debug\R.cs.flag
 C:\Users\Student\mihiran\UsbSerialForAndroid\UsbSerialForAndroid\obj\Debug\uploadflags.txt
 C:\Users\Student\mihiran\UsbSerialForAndroid\UsbSerialForAndroid\bin\Debug\Android.UsbSerial.dll.mdb
+C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialForAndroid\bin\Debug\Android.UsbSerial.dll
+C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialForAndroid\bin\Debug\Android.UsbSerial.pdb
+C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialForAndroid\bin\Debug\Android.UsbSerial.apk
+C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialForAndroid\bin\Debug\Android.UsbSerial-Signed.apk
+C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialForAndroid\obj\Debug\UsbSerialForAndroid.csprojResolveAssemblyReference.cache
+C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialForAndroid\obj\Debug\Android.UsbSerial.dll
+C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialForAndroid\obj\Debug\Android.UsbSerial.pdb
+C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialForAndroid\obj\Debug\android\bin\Android.UsbSerial.apk
+C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialForAndroid\obj\Debug\res\values\strings.xml
+C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialForAndroid\obj\Debug\R.cs.flag
+C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialForAndroid\obj\Debug\uploadflags.txt
+C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialForAndroid\bin\Debug\Android.UsbSerial.dll.mdb
