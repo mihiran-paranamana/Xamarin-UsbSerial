@@ -88,14 +88,15 @@ namespace UsbSerialExampleApp
 
             sleepButton.Click += delegate
             {
-                byte[] sleepdata = Encoding.ASCII.GetBytes(sendData.Text.ToString());
+                byte[] sleepdata = Encoding.ASCII.GetBytes(sendData.Text.ToString()+ '\n');
                 WriteData(sleepdata);
-                sendData.Text = "";
+                //sendData.Text = "";
             };
 
             wakeButton.Click += delegate
             {
                 //WriteData(wakedata);
+                dumpTextView.Text = "";
             };
         }
 

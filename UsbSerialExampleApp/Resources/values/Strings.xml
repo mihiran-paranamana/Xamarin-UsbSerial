@@ -3,5 +3,5 @@
   <string name="app_name">USB Serial Example</string>
   <string name="refreshing">Refreshing...</string>
   <string name="sleep">Send</string>
-  <string name="wakeup">Close</string>
+  <string name="wakeup">Clear</string>
 </resources>

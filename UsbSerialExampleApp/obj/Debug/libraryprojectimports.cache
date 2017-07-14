@@ -2,13 +2,13 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>C:\Users\Student\mihiran\UsbSerialForAndroid\UsbSerialExampleApp\obj\Debug\__library_projects__\Android.UsbSerial\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialExampleApp\obj\Debug\__library_projects__\Android.UsbSerial\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Android.UsbSerial\library_project_imports\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>C:\Users\Student\mihiran\UsbSerialForAndroid\UsbSerialExampleApp\obj\Debug\__library_projects__\Android.UsbSerial.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Student\mihiran\Xamarin-UsbSerialForAndroid\UsbSerialExampleApp\obj\Debug\__library_projects__\Android.UsbSerial.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>
