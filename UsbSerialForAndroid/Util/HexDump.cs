@@ -51,18 +51,20 @@ namespace Hoho.Android.UsbSerial.Util
             {
                 if (lineIndex == outLen)
                 {
-                    result.Append("\n");
+                    //result.Append("\n");
 
                     for (int j = 0; j < outLen; j++)
                     {
-                        if (line[j] >= ' ' && line[j] <= '~')
-                        {
-                            result.Append(System.Text.Encoding.Default.GetString(line).Substring(j, 1));
-                        }
-                        else
-                        {
-                            result.Append("");
-                        }
+                        result.Append(System.Text.Encoding.Default.GetString(line).Substring(j, 1));
+
+                        //if (line[j] >= ' ' && line[j] <= '~')
+                        //{
+                        //    result.Append(System.Text.Encoding.Default.GetString(line).Substring(j, 1));
+                        //}
+                        //else
+                        //{
+                        //    result.Append("");
+                        //}
                     }
 
                     //result.Append("\n0x");
@@ -73,26 +75,28 @@ namespace Hoho.Android.UsbSerial.Util
                 }
 
                 byte b = array[i];
-                result.Append(" ");
-                result.Append(HEX_DIGITS[(b >> 4) & 0x0F]);
-                result.Append(HEX_DIGITS[b & 0x0F]);
+                //result.Append(" ");
+                //result.Append(HEX_DIGITS[(b >> 4) & 0x0F]);
+                //result.Append(HEX_DIGITS[b & 0x0F]);
                 line[lineIndex++] = b;
             }
 
             if (!k)
             {
-                result.Append("\n");
+                //result.Append("\n");
 
                 for (int j = 0; j < lineIndex; j++)
                 {
-                    if (line[j] >= ' ' && line[j] <= '~')
-                    {
-                        result.Append(System.Text.Encoding.Default.GetString(line).Substring(j, 1));
-                    }
-                    else
-                    {
-                        result.Append("");
-                    }
+                    result.Append(System.Text.Encoding.Default.GetString(line).Substring(j, 1));
+
+                    //if (line[j] >= ' ' && line[j] <= '~')
+                    //{
+                    //    result.Append(System.Text.Encoding.Default.GetString(line).Substring(j, 1));
+                    //}
+                    //else
+                    //{
+                    //    result.Append("");
+                    //}
                 }
                 lineIndex = 0;
             }

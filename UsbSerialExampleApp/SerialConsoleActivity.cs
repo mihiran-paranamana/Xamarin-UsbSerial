@@ -21,6 +21,7 @@
  */
 
 using System;
+using System.Threading;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -52,7 +53,6 @@ namespace UsbSerialExampleApp
         const int WRITE_WAIT_MILLIS = 200;
 
         UsbSerialPort port;
-
         UsbManager usbManager;
         TextView titleTextView;
         TextView dumpTextView;
@@ -88,8 +88,9 @@ namespace UsbSerialExampleApp
 
             sleepButton.Click += delegate
             {
-                byte[] sleepdata = Encoding.ASCII.GetBytes(sendData.Text.ToString()+ '\n');
+                byte[] sleepdata = Encoding.ASCII.GetBytes(sendData.Text.ToString() + "\n");
                 WriteData(sleepdata);
+                dumpTextView.Append("\n >>> " + sendData.Text.ToString() + "\n");
                 //sendData.Text = "";
             };
 
@@ -155,8 +156,10 @@ namespace UsbSerialExampleApp
                 StopBits = StopBits.One,
                 Parity = Parity.None,
             };
-            serialIoManager.DataReceived += (sender, e) => {
-                RunOnUiThread(() => {
+            serialIoManager.DataReceived += (sender, e) =>
+            {
+                RunOnUiThread(() =>
+                {
                     UpdateReceivedData(e.Data);
                 });
             };
@@ -189,8 +192,7 @@ namespace UsbSerialExampleApp
 
         void UpdateReceivedData(byte[] data)
         {
-            var message = "Read " + data.Length + " bytes :"
-                + HexDump.DumpHexString(data) + "\n\n";
+            var message = HexDump.DumpHexString(data);
 
             dumpTextView.Append(message);
             scrollView.SmoothScrollTo(0, dumpTextView.Bottom);
