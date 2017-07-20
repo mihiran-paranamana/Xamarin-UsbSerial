@@ -109,6 +109,8 @@ namespace UsbSerialExampleApp
 
             table.AddProduct(0x09D8, 0x0420, typeof(CdcAcmSerialDriver)); // Elatec TWN4
 
+            table.AddProduct(0x067B, 0x2303, typeof(CdcAcmSerialDriver)); // PL2303
+
             var prober = new UsbSerialProber(table);
             return prober.FindAllDriversAsync(usbManager);
         }
